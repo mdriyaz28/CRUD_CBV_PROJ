@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% extends 'MYapp/base.html' %}
+{% block body_block %}
+    <h2> List-Of-Companies</h2><hr  width="85%"  color="green"/>
+    {% if company_list %}
+            {% for company in company_list %}
+         <h4>   <ul>
+                <li>Company-Name----<strong>{{ company.name|upper }}</strong></li>
+                *Location----{{ company.location }}<br/><br/>
+                <a href="/details/{{ company.id }}">More-Details</a> |
+                <a href="/update/{{ company.id }}">Update</a>|
+                <a href="/delete/{{ company.id }}">Delete</a>
+            </ul>
+                </h4>
+            <br/>
+        {% endfor %}
+         <a href="/create/">Create-or--Inset-New-Company-Details</a>
+    {% endif %}
+{% endblock %}

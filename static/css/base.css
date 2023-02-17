@@ -1,0 +1,25 @@
+h2{
+    color: brown;text-align: center;
+}
+ul{
+    margin: auto;width: 30%;text-align: center;
+}
+h3{
+    text-align: center;margin: auto;
+}
+body{
+    background-color: bisque;
+}
+#div11{
+    width: 300px;padding: 25px;
+    height: 500x;border: 3px solid purple;margin: auto;
+}
+#h22{
+    color:blueviolet;border: 2px solid pink;padding: 2px;border-radius: 30%;
+}
+p{
+    color: darkcyan;text-align: left;
+}
+ol{
+    text-align: center;margin: left;width: 20%;color: deeppink;
+}

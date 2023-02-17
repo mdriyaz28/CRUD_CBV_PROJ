@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends 'MYapp/base.html' %}\
+{% block body_block %}
+    <div class="div22">
+    <p> Company-Name::::<strong>{{ company.name|upper  }}</strong></p>
+    <p>Location::::{{ company.location }}</p>
+    <ol>
+        <li> JOB-{{ company.job1 }}<br/><br/>SALARY--{{ company.salary }}</li><br/><br/><br/>
+        <li>JOB-{{ company.job2 }}<br/><br/>SALARY--{{ company.salary2 }}</li>
+    </ol>
+    </div>
+    <a href="/companies/"> Previous-Page</a>|
+    <a href="/update/{{ company.id }}"> Upadate-Data</a>
+{% endblock %}

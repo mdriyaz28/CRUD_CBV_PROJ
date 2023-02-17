@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+{% extends 'MYapp/base.html' %}
+{% block body_block %}
+    <div align="center" id="div11">
+
+       <marquee direction="left" behavior="scroll"> <h2>  Create new records here</h2></marquee>
+        <hr width="100%" color="yellow"/>
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <button type="submit">Insert-Details</button><br/><br/>
+        To Go back to Homepage<br/>
+       <button type="button"> <a href="/companies/">Cancel</a></button>
+    </form>
+    </div>
+{% endblock %}

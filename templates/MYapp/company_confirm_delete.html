@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends 'MYapp/base.html' %}
+{% block body_block %}
+    <div align="center">
+    <h2> Do you want to Delete-Company-Details </h2><hr/>
+    <form method="post">
+        {% csrf_token %}
+        <h4><button type="submit">Yes</button><br/><br/><button type="button"><a href="/companies/">NO</a></button></h4>
+
+    </form>
+    </div>
+{% endblock %}
